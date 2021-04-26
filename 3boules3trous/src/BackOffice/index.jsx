@@ -14,28 +14,33 @@ export const BackOffice = ({selectedValueQuine, setSelectedValueQuine, selectedV
 
   return (
   <div id="backOffice">
-  <h2> Sélectionner les users Quine </h2>
-  <Select
-    defaultValue={[]}
-    isMulti
-    name="users"
-    options={userList}
-    className="basic-multi-select"
-    classNamePrefix="select"
-    value={userList.filter(obj => selectedValueQuine.includes(obj.value))}
-    onChange={handleChangeQuine}
-  /> 
-  <h2> Sélectionner les users Carton </h2>
-  <Select
-    defaultValue={[]}
-    isMulti
-    name="users"
-    options={userList}
-    className="basic-multi-select"
-    classNamePrefix="select"
-    value={userList.filter(obj => selectedValueCarton.includes(obj.value))}
-    onChange={handleChangeCarton}
-  /> 
+    <h1> BackOffice </h1>
+  <div class = "conteneur_Type">
+    <h2> Gestion Quine </h2>
+    <Select
+      defaultValue={[]}
+      isMulti
+      name="users"
+      options={userList}
+      className="basic-multi-select"
+      classNamePrefix="select"
+      value={userList.filter(obj => selectedValueQuine.includes(obj.value))}
+      onChange={handleChangeQuine}
+    /> 
+  </div>
+  <div class = "conteneur_Type">
+    <h2> Gestion Carton plein </h2>
+    <Select
+      defaultValue={[]}
+      isMulti
+      name="users"
+      options={userList}
+      className="basic-multi-select"
+      classNamePrefix="select"
+      value={userList.filter(obj => selectedValueCarton.includes(obj.value))}
+      onChange={handleChangeCarton}
+    /> 
+  </div>
   </div>
 )
 
