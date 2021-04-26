@@ -1,5 +1,6 @@
 #backOffice{
-    width: 350px;
-    background: rgb(206, 206, 206);
+    width: 1000px;
+    background: rgb(141, 137, 137);
     display: flex;
+    flex-direction: column;
 };

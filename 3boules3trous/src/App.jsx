@@ -4,14 +4,15 @@ import BackOffice from './BackOffice/index';
 import './App.css';
 
 function App() {
-  const [inputText, updateInputText] = useState([]);
+  const [selectedValueQuine, setSelectedValueQuine] = useState([]);
+  const [selectedValueCarton, setSelectedValueCarton] = useState([]);
 
   return (
     <div id="app">
       <div id="stream">
-        <Leaderboard inputText={inputText} />
+        <Leaderboard selectedValueQuine={selectedValueQuine} selectedValueCarton={selectedValueCarton}/>
       </div>
-      <BackOffice inputText={inputText} updateInputText={updateInputText}/>
+        <BackOffice selectedValueQuine={selectedValueQuine} setSelectedValueQuine ={setSelectedValueQuine} selectedValueCarton={selectedValueCarton} setSelectedValueCarton ={setSelectedValueCarton}/>
     </div>
   );
 }
