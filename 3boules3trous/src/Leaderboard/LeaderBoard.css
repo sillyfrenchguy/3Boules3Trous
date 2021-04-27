@@ -1,0 +1,35 @@
+#Leaderboard{
+    background-color: rgb(80, 80, 80);
+    width: 330px;
+    height: 330px;
+    margin:5px; 
+}
+
+.conteneur_Type{
+    display:flex; 
+    flex-direction: column;
+    height: 150px;
+    margin:5px;
+}
+
+.conteneur_userLeader{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    
+}
+
+.userLeader{
+    background-color: white;
+    color: rgb(80, 80, 80);
+    padding: 6px 8px 6px 8px; 
+    margin: 5px 5px 5px 5px; 
+    font-size: 18px;
+}
+
+h2{
+    color:white; 
+    text-transform: uppercase;
+}
