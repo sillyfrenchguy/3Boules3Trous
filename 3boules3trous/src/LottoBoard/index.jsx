@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './LottoBoard.css';
 
-export const LottoBoard = () => {
-  const [drawnNumbers, updateDrawnNumbers] = useState([]);
-
+export const LottoBoard = ({drawnNumbers, updateDrawnNumbers}) => {
   const initState = () =>{
     let init = [];
     for(let i=0; i<99; i++){
@@ -19,7 +17,7 @@ export const LottoBoard = () => {
     let state = [...tdClass];
     if(state[value-1] === 'unClickedCell'){
       state[value-1] = 'clickedCell';
-      drawnNumbers.push(value);
+      drawnNumbers.unshift(value);
     }
     else if(state[value-1] === 'clickedCell'){
       state[value-1] = 'unClickedCell';
@@ -27,7 +25,6 @@ export const LottoBoard = () => {
         drawnNumbers.splice(drawnNumbers.indexOf(value),1);
       }
     }
-
     updateDrawnNumbers(drawnNumbers);
     setTdClass(state);
   };
@@ -39,11 +36,11 @@ export const LottoBoard = () => {
       let cells = [];
       for(let j=0; j<10; j++){
         if(nb !== 100){
-          cells.push(<td class={tdClass[nb-1]} value={nb} onClick={e =>cellClick(e)}>{nb}</td>);
+          cells.push(<td className={tdClass[nb-1]} value={nb} key={nb.toString()+'-'+tdClass[nb-1].toString()} onClick={e =>cellClick(e)}>{nb}</td>);
         }
         nb ++;
       };
-      rows.push(<tr>{cells}</tr>);
+      rows.push(<tbody><tr key={'row'+i.toString()}>{cells}</tr></tbody>);
     }
     return rows;
   }

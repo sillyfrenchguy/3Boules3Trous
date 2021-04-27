@@ -15,7 +15,7 @@ export const BackOffice = ({selectedValueQuine, setSelectedValueQuine, selectedV
   return (
   <div id="backOffice">
     <h1> BackOffice </h1>
-  <div class = "conteneur_Type">
+  <div className = "conteneur_Type">
     <h2> Gestion Quine </h2>
     <Select
       defaultValue={[]}
@@ -28,7 +28,7 @@ export const BackOffice = ({selectedValueQuine, setSelectedValueQuine, selectedV
       onChange={handleChangeQuine}
     /> 
   </div>
-  <div class = "conteneur_Type">
+  <div className = "conteneur_Type">
     <h2> Gestion Carton plein </h2>
     <Select
       defaultValue={[]}
