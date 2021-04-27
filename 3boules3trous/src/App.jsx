@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Leaderboard from './Leaderboard/index';
+import LottoBoard from './LottoBoard/index';
 import BackOffice from './BackOffice/index';
 import './App.css';
 import Banner from './Banner';
@@ -13,6 +14,7 @@ function App() {
       <div id="stream">
         <Banner/>
         <Leaderboard selectedValueQuine={selectedValueQuine} selectedValueCarton={selectedValueCarton}/>
+        <LottoBoard  />
       </div>
         <BackOffice selectedValueQuine={selectedValueQuine} setSelectedValueQuine ={setSelectedValueQuine} selectedValueCarton={selectedValueCarton} setSelectedValueCarton ={setSelectedValueCarton}/>
     </div>

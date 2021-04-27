@@ -1,0 +1,15 @@
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.unClickedCell {
+    background-color: white;
+    color: black;
+}
+
+.clickedCell {
+    background-color: black;
+    color: white;
+}
+  
