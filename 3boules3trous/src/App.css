@@ -4,14 +4,23 @@ html, body{
 
 #app{
   display: flex; 
-  flex-direction:row;
+  flex-direction:inline;
 }
 
 #stream{
   width: 1920px;
   height: 1080px;
   background: rgb(248, 184, 184);
-  display: flex; 
-  flex-direction: column;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+};
+
+#leftColumn{
+
+};
+
+#middleColumn{
+
 };
 

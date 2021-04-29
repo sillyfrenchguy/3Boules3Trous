@@ -25,7 +25,8 @@ export const LottoBoard = ({drawnNumbers, updateDrawnNumbers}) => {
         drawnNumbers.splice(drawnNumbers.indexOf(value),1);
       }
     }
-    updateDrawnNumbers(drawnNumbers);
+    const tmpDrawnNumbers = [...drawnNumbers];
+    updateDrawnNumbers(tmpDrawnNumbers);
     setTdClass(state);
   };
 

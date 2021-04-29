@@ -3,22 +3,29 @@ import Leaderboard from './Leaderboard/index';
 import LottoBoard from './LottoBoard/index';
 import LastDrawnNumbers from './LastDrawnNumbers/index';
 import BackOffice from './BackOffice/index';
-import './App.css';
+import Chat from './Chat/index';
 import Banner from './Banner';
+import './App.css';
 
 function App() {
+  const [drawnNumbers, updateDrawnNumbers] = useState([]);
   const [selectedValueQuine, setSelectedValueQuine] = useState([]);
   const [selectedValueCarton, setSelectedValueCarton] = useState([]);
-  const [drawnNumbers, updateDrawnNumbers] = useState([]);
 
   return (
     <div id="app">
       <div id="stream">
         <Banner/>
-        <Leaderboard selectedValueQuine={selectedValueQuine} selectedValueCarton={selectedValueCarton}/>
-        <LottoBoard  drawnNumbers={drawnNumbers} updateDrawnNumbers={updateDrawnNumbers}/>
-        <LastDrawnNumbers drawnNumbers={drawnNumbers}/>
-        
+        <div id="leftColumn">
+          <Leaderboard selectedValueQuine={selectedValueQuine} selectedValueCarton={selectedValueCarton}/>
+        </div>
+        <div id="middleColumn">
+          <LottoBoard  drawnNumbers={drawnNumbers} updateDrawnNumbers={updateDrawnNumbers}/>
+        </div>
+        <div id="rightColumn">
+          <LastDrawnNumbers drawnNumbers={drawnNumbers}/>
+          <Chat />
+        </div>
       </div>
         <BackOffice selectedValueQuine={selectedValueQuine} setSelectedValueQuine ={setSelectedValueQuine} selectedValueCarton={selectedValueCarton} setSelectedValueCarton ={setSelectedValueCarton}/>
     </div>
