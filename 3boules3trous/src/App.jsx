@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import WinnerAnimation from './WinnerAnimation/index';
 import Leaderboard from './Leaderboard/index';
 import LottoBoard from './LottoBoard/index';
 import LastDrawnNumbers from './LastDrawnNumbers/index';
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div id="app">
+      <WinnerAnimation />
       <div id="stream">
         <Banner/>
         <div id="leftColumn">

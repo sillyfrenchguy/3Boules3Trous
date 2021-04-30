@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 html, body{
   margin: 0;
 }
@@ -5,22 +7,26 @@ html, body{
 #app{
   display: flex; 
   flex-direction:inline;
+  font-family: 'Secular One', sans-serif;
+  color: #0d0d0d;
 }
 
 #stream{
-  width: 1920px;
-  height: 1080px;
-  background: rgb(248, 184, 184);
+  width: 1830px;
+  height: 990px;
+  padding: 45px;
+  margin: 0;
+  background-color: rgba(242, 212, 61, 40%);
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-between; 
 };
 
 #leftColumn{
-
+  margin: 0;
 };
 
 #middleColumn{
-
+  margin: 0;
 };
 

@@ -1,4 +1,6 @@
 #banner{
     display: block;
     width: 1920px;
+    height: 175px;
+    margin: 0;
 }

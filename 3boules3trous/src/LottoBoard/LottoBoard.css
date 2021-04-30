@@ -1,15 +1,50 @@
+table{
+    border-spacing: 8.5px;
+}
+
 td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 5px solid #0d0d0d;
+    border-radius: 12px;
+    height: 58px;
+    width: 58px;
+    font-size: 36px;
+    text-align: center;
+    background-color: #f24405;
+    color: #f2e5d5;
 }
 
 .unClickedCell {
-    background-color: white;
-    color: black;
+    background-color: #4bbfb4;
+    color: #0d0d0d;
 }
 
 .clickedCell {
-    background-color: black;
-    color: white;
+    background-color: #f24405;
+    color: #f2e5d5;
 }
+
+progress{
+    width: 100%;
+    margin-top: 30px;
+    height: 18px;
+    background-color: #4bbfb4;
+    border: 5px solid #0d0d0d;
+    border-radius: 12px;
+}
+
+progress[value]::-moz-progress-bar{
+    padding: 0;
+    margin-top: -5px;
+    margin-left: -2.5px;
+    height: 27px;
+    background-color: #f2d43d;
+    border: 5px solid #0d0d0d;
+    border-radius: 12px;
+
+}
+
+progress[value]::-webkit-progress-value{
+    background-color: white;
+}
+  
   

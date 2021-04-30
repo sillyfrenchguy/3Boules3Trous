@@ -16,7 +16,7 @@ export const BackOffice = ({selectedValueQuine, setSelectedValueQuine, selectedV
   <div id="backOffice">
     <h1> BackOffice </h1>
   <div className = "conteneur_Type">
-    <h2> Gestion Quine </h2>
+    <h3>Quine </h3>
     <Select
       defaultValue={[]}
       isMulti
@@ -29,7 +29,7 @@ export const BackOffice = ({selectedValueQuine, setSelectedValueQuine, selectedV
     /> 
   </div>
   <div className = "conteneur_Type">
-    <h2> Gestion Carton plein </h2>
+    <h3>Carton Plein </h3>
     <Select
       defaultValue={[]}
       isMulti

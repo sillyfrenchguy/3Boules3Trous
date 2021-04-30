@@ -23,14 +23,17 @@ export const Chat = () => {
   }
 
   return (
-    <div id="chatBox">
-      {
-        messages.length > 0 && (
-            <div>
-                {chatBody(messages)}
-            </div>
-        )
-      }
+    <div>
+      <h2>Chat</h2>
+      <div id="chatBox"> 
+        {
+          messages.length > 0 && (
+              <div>
+                  {chatBody(messages)}
+              </div>
+          )
+        }
+      </div>
     </div>
   );
 };

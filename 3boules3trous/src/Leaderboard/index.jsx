@@ -16,11 +16,11 @@ export const Leaderboard = ({selectedValueQuine, selectedValueCarton}) => {
             ))}
           </div>
         </div>
-        <div className="conteneur_Type">
-          <h2>Carton </h2>
+        <div className="conteneur_Type conteneurCarton">
+          <h2>Carton plein</h2>
           <div className="conteneur_userLeader">
             {selectedValueCarton.map((text) => (
-            <div className ="userLeader" key={text}>
+            <div className ="userLeader cartonPlein" key={text}>
               {text}
             </div>
             ))}
