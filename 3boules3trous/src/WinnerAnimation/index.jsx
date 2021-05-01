@@ -1,12 +1,16 @@
 import React from 'react';
 import './WinnerAnimation.css';
 
-export const WinnerAnimation = () => {
+export const WinnerAnimation = ({titre, selectedValue}) => {
 
-  return (
-     <div id="winnerOverlay" className="fadeOut">
-         <h1>QUINE !</h1>
-     </div>
-  );
-};
-  export default WinnerAnimation;
+
+      return (
+        <div id="winnerOverlay" className="fadeOut" >
+            <h1>{titre}</h1>
+            <h1>{selectedValue}</h1>; 
+        </div>
+      );
+
+}
+
+export default WinnerAnimation;

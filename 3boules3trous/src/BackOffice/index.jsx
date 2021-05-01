@@ -1,6 +1,7 @@
 import React from 'react';
 import './BackOffice.css';
 import { userList } from '../datas/userList'
+import ButtonAnimation from '../ButtonAnimation/index';
 import Select from 'react-select'; 
 
 export const BackOffice = ({selectedValueQuine, setSelectedValueQuine, selectedValueCarton, setSelectedValueCarton}) => {
@@ -41,6 +42,8 @@ export const BackOffice = ({selectedValueQuine, setSelectedValueQuine, selectedV
       onChange={handleChangeCarton}
     /> 
   </div>
+  <ButtonAnimation type='NEW QUINE' titre = "Quine !" selectedValue={selectedValueQuine[selectedValueQuine.length - 1]} />
+  <ButtonAnimation type='NEW CARTON' titre ="Carton plein !" selectedValue={selectedValueCarton[selectedValueCarton.length - 1]} />
   </div>
 )
 
