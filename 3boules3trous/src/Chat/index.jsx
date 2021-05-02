@@ -23,7 +23,7 @@ export const Chat = () => {
   }
 
   return (
-    <div>
+    <div id="chat">
       <h2>Chat</h2>
       <div id="chatBox"> 
         {

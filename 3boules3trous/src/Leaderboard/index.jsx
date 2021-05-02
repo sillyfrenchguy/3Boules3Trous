@@ -1,11 +1,12 @@
 import React from 'react';
 import './LeaderBoard.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Leaderboard = ({selectedValueQuine, selectedValueCarton}) => {
     
     return (
       <div id="Leaderboard">
+        <FontAwesomeIcon icon="trophy"/>
         <div className="conteneur_Type">
           <h2>Quine</h2>
           <div className="conteneur_userLeader">

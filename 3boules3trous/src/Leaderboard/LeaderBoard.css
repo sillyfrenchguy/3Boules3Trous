@@ -2,8 +2,14 @@
     background-color: #4bbfb4;;
     width: 460px;
     height: 470px;
-    border-radius: 12px;;
-    
+    border-radius: 12px;;  
+}
+
+#Leaderboard svg{
+    position: absolute;
+    left: 420px;
+    margin-top: 10px;
+    font-size: 70px;
 }
 
 .conteneur_Type{

@@ -1,16 +1,28 @@
 #backOffice{
     width: 600px;
+    height: 1080px;
     background-color: #f24405;
     display: flex;
     flex-direction: column;
-    color: white;
-
-};
-
-.conteneur_Type{
-    margin:5px; 
 }
 
-h1{
+#backOffice h1{
     text-align: center;
+    color: #f2e5d5;
+    margin: 5px 0 0 0;
+}
+
+.conteneur_Type{
+    margin: 5px;
+}
+
+.conteneur_Type h3{
+    margin: 0;
+    font-size: 28px;
+    color: #f2e5d5;
+}
+
+.boutonAnimation{
+    text-align: center;
+    margin: 5px;
 }

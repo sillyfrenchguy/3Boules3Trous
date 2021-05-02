@@ -7,7 +7,7 @@ export const WinnerAnimation = ({titre, selectedValue}) => {
       return (
         <div id="winnerOverlay" className="fadeOut" >
             <h1>{titre}</h1>
-            <h1>{selectedValue}</h1>; 
+            <h2>{selectedValue}</h2>; 
         </div>
       );
 

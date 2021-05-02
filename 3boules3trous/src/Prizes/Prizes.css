@@ -1,0 +1,12 @@
+.conteneurOrange.prizes{
+    width: 90%;
+    margin-top: 30px;
+}
+
+.conteneurOrange.prizes h3{
+    padding-top: 15px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #f2e5d5;  
+}

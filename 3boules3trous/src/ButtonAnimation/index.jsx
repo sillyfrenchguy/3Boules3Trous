@@ -20,7 +20,7 @@ export const ButtonAnimation = ({type, titre, selectedValue}) => {
         }
 
     return (
-        <div>
+        <div class="boutonAnimation">
             <button onClick={changeIsToggleOn}>{text}</button>
             {isToggleOn === false && (<WinnerAnimation type={type} titre={titre} selectedValue={selectedValue} />)}
         </div>
