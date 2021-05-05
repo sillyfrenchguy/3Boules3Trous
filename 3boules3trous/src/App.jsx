@@ -22,10 +22,6 @@ function App() {
 
   return (
     <div id="app">
-      <div id="videoBg">
-        <iframe  width="1920" height="1080" src="https://www.youtube.com/embed/vyMUhgMeJ8A?rel=0&amp;autoplay=1&amp;mute=0&amp;controls=0" allow="autoplay" title="YouTube video player" frameborder="0"  allowfullscreen>
-        </iframe>
-      </div>
       <div id="stream">
         <Banner prize={prize}/>
         <div id="leftColumn">

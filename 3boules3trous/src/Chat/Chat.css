@@ -11,6 +11,7 @@
     overflow:scroll;
     overflow-x:hidden;
     overflow-y:scroll;
+    box-shadow: -1px 3px 15px rgba(0, 0, 0, 0.623);
 }
 
 p {

@@ -7,13 +7,13 @@ export const Banner = ({prize}) => {
 
     return (
         <div id="banner">
-            <div class="conteneurBanner">
+            <div className="conteneurBanner">
                 <h1>3 boules 3 trous</h1>
             </div>
-            <div class="conteneurBanner">
+            <div className="conteneurBanner">
                 <Jackpot prize={prize}/>
             </div>
-            <div class="conteneurBanner">
+            <div className="conteneurBanner">
                 <PlayersOnline />
             </div>
         </div>

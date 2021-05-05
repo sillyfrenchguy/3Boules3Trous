@@ -2,7 +2,8 @@
     background-color: #4bbfb4;;
     width: 460px;
     height: 470px;
-    border-radius: 12px;;  
+    border-radius: 12px;
+    box-shadow: -1px 3px 15px rgba(0, 0, 0, 0.623); 
 }
 
 #Leaderboard svg{
